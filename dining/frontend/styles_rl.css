@@ -1,0 +1,184 @@
+.container {
+  background-color: #D3C5E5;
+  padding: 20px;
+  position: relative;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  box-sizing: border-box; /* Ensure padding is included in width and height */
+  overflow: auto; /* Add scroll if content overflows */
+}
+
+/* Container for the search sections */
+.search-section {
+  display: flex;
+  gap: 20px; /* Space between search sections */
+  margin-bottom: 20px; /* Space below the search section */
+}
+
+/* Style for individual search sections */
+.search-bar,
+.location-search,
+.cuisine-search-bar,
+.upload-section{
+  display: flex;
+  flex-direction: row;
+  gap: 10px; /* Space between input fields and button */
+   /* Ensure both sections grow equally */
+}
+
+/* Align Latitude, Longitude, and Radius inputs side by side */
+.location-search {
+  display: flex;
+  flex-direction: row; /* Align inputs and button horizontally */
+  position: absolute; /* Absolute positioning for top-right placement */
+  top: 160px; /* Distance from the top of the container */
+  right: 20px; /* Distance from the right of the container */
+  gap: 10px; /* Space between input fields */
+}
+.cuisine-search-bar{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 220px;
+  left: 20px;
+  gap: 10px;
+}
+.upload-section{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 220px;
+  right: 20px;
+  gap: 10px;
+}
+.location-search-inputs {
+  display: flex;
+  gap: 10px; /* Space between input fields */
+}
+.search-bar{
+  top: 240px;
+}
+
+/* Style for inputs and buttons */
+.search-bar input,
+.search-bar button,
+.cuisine-search-bar button,
+.cuisine-search-bar input,
+.location-search input,
+.location-search button
+.upload input
+.upload button {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.search-bar input,
+.location-search input ,
+.cuisine-search-bar input
+.upload-section input{
+  width:  150px; /* Width of the input fields */
+}
+
+.search-bar button,
+.location-search button,
+.cuisine-search-bar button
+.upload-section button {
+  cursor: pointer;
+}
+
+/* Optional: Add some margin to buttons for better spacing */
+.search-bar button,
+.location-search button,
+.cuisine-search-bar button,
+.upload-section button {
+  margin-top: 10px;
+}
+
+/* Container for the restaurant list */
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between boxes */
+  margin-top: 180px;
+}
+
+/* Individual restaurant box */
+.restaurant-box {
+  background-color: #f9f9f9;
+  border: 2px solid #ae61ab;
+  padding: 15px;
+  width: 200px; /* Fixed width for each box */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s ease; /* Adds hover effect */
+  font-family: 'Arial', sans-serif; /* Font family */
+  color: #333; /* Default text color */
+}
+
+/* Hover effect on each restaurant box */
+.restaurant-box:hover {
+  transform: scale(1.05);
+  background-color: #c4e9ea; /* Background color on hover */
+}
+
+/* Restaurant box text styling */
+.restaurant-box p {
+  margin: 5px 0;
+  font-size: 18px; /* Text size */
+  font-weight: bold; /* Bold text */
+  color: #52a1cb; /* Custom color for text */
+}
+
+/* Specific styling for restaurant ID */
+.restaurant-box p:first-child {
+  font-size: 21px; /* Slightly smaller font for the ID */
+  color: #44195e; /* Different color for the ID */
+}
+
+/* Container for the buttons */
+.pagination {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 10px;
+  margin-top: 40px; /* Adds space above the buttons */
+  padding-bottom: 40px; /* Adds padding to create space between buttons and bottom of the page */
+}
+
+/* Individual buttons */
+.pagination button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Disabled button style */
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.b1 {
+  background-color:#b99ddf;
+  font-size: 18px;
+  border: 2px solid #ae61ab;
+}
+
+.b2{
+  background-color: #b99ddf;
+  font-size: 18px;
+  border: 2px solid #ae61ab;
+}
+
+.b3{
+  background-color: #b99ddf;
+  font-size: 18px;
+  border: 2px solid #ae61ab;
+}
+
+.upload{
+  display: flex;
+  font-size: 18px;
+  top: 100px;
+  
+}
